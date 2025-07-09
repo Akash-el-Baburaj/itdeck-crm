@@ -11,10 +11,11 @@ import { FirstResponseTimeComponent } from '../../../dashboard/help-desk/first-r
 import { AveResolutionTimeComponent } from '../../../dashboard/help-desk/ave-resolution-time/ave-resolution-time.component';
 import { ComplaintsComponent } from './complaints/complaints.component';
 import { CustomizerSettingsService } from '../../../customizer-settings/customizer-settings.service';
+import { PmProjectsListComponent } from './pm-projects-list/pm-projects-list.component';
 
 @Component({
     selector: 'app-hd-reports',
-    imports: [MatCardModule, MatMenuModule, MatButtonModule, RouterLink, MatTableModule, MatPaginatorModule, MatProgressBarModule, MatTooltipModule, FirstResponseTimeComponent, AveResolutionTimeComponent, ComplaintsComponent],
+    imports: [MatCardModule, MatMenuModule, MatButtonModule, RouterLink, MatTableModule, MatPaginatorModule, MatProgressBarModule, MatTooltipModule, FirstResponseTimeComponent, AveResolutionTimeComponent, ComplaintsComponent, PmProjectsListComponent],
     templateUrl: './hd-reports.component.html',
     styleUrl: './hd-reports.component.scss'
 })

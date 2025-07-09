@@ -3,7 +3,7 @@ import { NotFoundComponent } from './common/not-found/not-found.component';
 // import { ProjectManagementComponent } from './dashboard/project-management/project-management.component';
 import { CrmComponent } from './dashboard/crm/crm.component';
 // import { LmsComponent } from './dashboard/lms/lms.component';
-// import { HelpDeskComponent } from './dashboard/help-desk/help-desk.component';
+import { HelpDeskComponent } from './dashboard/help-desk/help-desk.component';
 import { InvoiceDetailsComponent } from './pages/invoices-page/invoice-details/invoice-details.component';
 import { InvoicesComponent } from './pages/invoices-page/invoices/invoices.component';
 import { InvoicesPageComponent } from './pages/invoices-page/invoices-page.component';
@@ -66,11 +66,13 @@ import { AddUserComponent } from './pages/users-page/add-user/add-user.component
 import { PmTeamsComponent } from './pages/users-page/pm-teams/pm-teams.component';
 import { TeamMembersComponent } from './pages/users-page/team-members/team-members.component';
 import { ProjectManagementComponent } from './pages/project-management/project-management.component';
+// import { HdReportsComponent } from './pages/hd-reports/hd-reports.component';
 
 export const routes: Routes = [
     {path: '', redirectTo: 'crm', pathMatch: 'full'},
     {path: 'crm', component: CrmComponent},
-    {path: 'report', component: ProjectManagementComponent},
+    {path: 'report', component: HdReportsComponent},
+    {path: 'team-report', component: ProjectManagementComponent},
     // {path: 'lms', component: LmsComponent},
     // {path: 'help-desk', component: HelpDeskComponent},
     {
@@ -93,7 +95,7 @@ export const routes: Routes = [
 
     {path: 'to-do-list', component: ToDoListComponent},
     {path: 'calendar', component: CalendarComponent},
-    {path: 'students', component: ContactsComponent},
+    {path: 'customer', component: ContactsComponent},
     {path: 'edit-student', component: EditContactComponent},
     {path: 'chat', component: ChatComponent},
     {path: 'kanban-board', component: KanbanBoardComponent},

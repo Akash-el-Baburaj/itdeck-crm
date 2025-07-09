@@ -10,9 +10,9 @@
                 Dashboard
             </a>
         </li>
-        <li class="breadcrumb-item position-relative">
+        <!-- <li class="breadcrumb-item position-relative">
             Help Desk
-        </li>
+        </li> -->
         <li class="breadcrumb-item position-relative">
             Reports
         </li>
@@ -41,6 +41,10 @@
     </div>
 </div>
 
+<div>
+    <app-pm-projects-list />
+</div>
+
 <!-- Performance of Agents -->
 <mat-card
     class="daxa-card performance-of-agents-card mb-25 border-radius bg-white border-none d-block"
@@ -50,7 +54,7 @@
     <mat-card-header>
         <mat-card-title>
             <h5 class="mb-0">
-                Performance of Agents
+                Performance of Teams
             </h5>
         </mat-card-title>
     </mat-card-header>
@@ -62,7 +66,7 @@
                     <!-- Agent ID Column -->
                     <ng-container matColumnDef="agentID">
                         <th mat-header-cell *matHeaderCellDef>
-                            Agent ID
+                            Team ID
                         </th>
                         <td mat-cell *matCellDef="let element">
                             {{element.agentID}}
@@ -72,7 +76,7 @@
                     <!-- Agent Column -->
                     <ng-container matColumnDef="agent">
                         <th mat-header-cell *matHeaderCellDef>
-                            Agent
+                            Team
                         </th>
                         <td mat-cell *matCellDef="let element" class="text-black">
                             <div class="info d-flex align-items-center">
